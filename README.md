@@ -11,11 +11,14 @@ Tiny string compression module
 ## Usage
 
 ```javascript
-const { encode, decode } = require('shrink-string')
+const { compress, decompress } = require('shrink-string')
+
+// `compress` takes a unicode string and returns a base64 string
+// `decompress` takes that base64 string and returns the original unicode string
 
 const thing = async (s = '') => {
-  const shrunk = await encode(s)
-  const expanded = await decode(shrunk)
+  const shrunk = await compress(s)
+  const expanded = await decompress(shrunk)
   assert(s === expanded)
 }
 ```

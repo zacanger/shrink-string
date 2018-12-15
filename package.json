@@ -1,6 +1,6 @@
 {
   "name": "shrink-string",
-  "description": "shrink-string",
+  "description": "Tiny string compression module",
   "version": "0.0.1",
   "author": {
     "name": "Zac Anger",
@@ -10,8 +10,10 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
-    "test": ""
+    "preversion": "npm t",
+    "test": "npm run test:lint && npm run test:tape",
+    "test:lint": "eslint -c .eslintrc.json *.js",
+    "test:tape": "node index.test.js"
   },
   "homepage": "https://github.com/zacanger/shrink-string#readme",
   "repository": {
@@ -20,11 +22,23 @@
   },
   "bugs": "https://github.com/zacanger/shrink-string/issues",
   "keywords": [
-    "",
-    "shrink-string"
+    "base64",
+    "compress",
+    "compression",
+    "gzip",
+    "string"
   ],
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-eslint": "10.0.1",
+    "eslint": "5.10.0",
+    "eslint-config-zacanger": "3.4.2",
+    "eslint-plugin-babel": "5.3.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-unicorn": "6.0.1",
+    "tape-async": "2.3.0"
+  },
   "engines": {
     "node": ">=10.0.0"
   }

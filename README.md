@@ -1,6 +1,6 @@
 # shrink-string
 
-Tiny string compression module
+Tiny string compression module for Node.
 
 --------
 

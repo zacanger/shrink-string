@@ -3,16 +3,16 @@
   "description": "Tiny string compression module for Node.",
   "version": "2.0.1",
   "author": {
-    "name": "Zac Anger",
     "email": "zac@zacanger.com",
+    "name": "Zac Anger",
     "url": "https://zacanger.com"
   },
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "preversion": "npm t",
+    "preversion": "sortpack && npm t",
     "test": "npm run test:lint && npm run test:tape",
-    "test:lint": "eslint -c .eslintrc.json *.js",
+    "test:lint": "standard",
     "test:tape": "node index.test.js"
   },
   "homepage": "https://github.com/zacanger/shrink-string#readme",
@@ -30,13 +30,8 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "babel-eslint": "10.0.1",
-    "eslint": "5.12.0",
-    "eslint-config-zacanger": "3.4.2",
-    "eslint-plugin-babel": "5.3.0",
-    "eslint-plugin-import": "2.14.0",
-    "eslint-plugin-promise": "4.0.1",
-    "eslint-plugin-unicorn": "6.0.1",
+    "sortpack": "1.1.6",
+    "standard": "12.0.1",
     "tape-async": "2.3.0"
   },
   "engines": {

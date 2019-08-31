@@ -7,7 +7,7 @@
     "name": "Zac Anger",
     "url": "https://zacanger.com"
   },
-  "license": "MIT",
+  "license": "LGPL-3.0",
   "main": "index.js",
   "scripts": {
     "preversion": "sortpack && npm t",

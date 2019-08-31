@@ -23,6 +23,4 @@ const thing = async (s = '') => {
 }
 ```
 
-## License
-
-[MIT](./LICENSE.md)
+[LICENSE](./LICENSE.md)

@@ -1,11 +1,15 @@
 {
   "name": "shrink-string",
   "description": "Tiny string compression module for Node.",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "author": {
     "email": "zac@zacanger.com",
     "name": "Zac Anger",
     "url": "https://zacanger.com"
+  },
+  "funding": {
+    "type": "ko-fi",
+    "url": "https://ko-fi.com/zacanger"
   },
   "license": "LGPL-3.0",
   "main": "index.js",
@@ -36,9 +40,5 @@
   },
   "engines": {
     "node": ">=10.0.0"
-  },
-  "funding": {
-    "type": "ko-fi",
-    "url": "https://ko-fi.com/zacanger"
   }
 }

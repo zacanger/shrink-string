@@ -16,7 +16,7 @@
   "scripts": {
     "preversion": "sortpack && npm t",
     "test": "npm run test:lint && npm run test:tape",
-    "test:lint": "standard",
+    "test:lint": "eslint -c .eslintrc.json *.js",
     "test:tape": "node index.test.js"
   },
   "homepage": "https://github.com/zacanger/shrink-string#readme",
@@ -34,11 +34,28 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "sortpack": "2.1.1",
-    "standard": "14.3.1",
+    "eslint": "6.8.0",
+    "eslint-plugin-zacanger": "1.1.3",
+    "husky": "4.2.3",
+    "lint-staged": "10.0.8",
+    "prettier": "2.0.1",
+    "sortpack": "2.1.2",
     "tape-async": "2.3.0"
   },
   "engines": {
     "node": ">=10.0.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write"
+    ],
+    "package.json": [
+      "sortpack"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

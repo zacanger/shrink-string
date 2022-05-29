@@ -17,5 +17,5 @@ const decompress = async (s = '') => {
 
 module.exports = {
   compress,
-  decompress,
+  decompress
 }

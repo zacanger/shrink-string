@@ -1,4 +1,3 @@
-// eslint-disable-next-line node/no-unpublished-require
 const test = require('tape-async')
 const { compress, decompress } = require('.')
 

@@ -11,7 +11,7 @@
     "type": "ko-fi",
     "url": "https://ko-fi.com/zacanger"
   },
-  "license": "LGPL-3.0",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "preversion": "sortpack && npm t",
@@ -33,7 +33,7 @@
     "string"
   ],
   "devDependencies": {
-    "sortpack": "2.2.2",
+    "sortpack": "2.2.3",
     "standard": "17.0.0",
     "tape-async": "2.3.0"
   },

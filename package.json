@@ -15,7 +15,8 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "preversion": "sortpack prettier --write src/*.ts && npm t",
+    "prebuild": "sortpack prettier --write src/*.ts && npm t",
+    "preversion": "npm run build",
     "test": "npm run test:tape",
     "test:tape": "node index.test.js"
   },

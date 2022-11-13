@@ -25,4 +25,6 @@ const thing = async (s = '') => {
 }
 ```
 
+Thanks to [MrlolDev](https://github.com/MrlolDev) for adding TypeScript support.
+
 [LICENSE](./LICENSE.md)

@@ -1,5 +1,5 @@
 const test = require('tape-async')
-const { compress, decompress } = require('.')
+const { compress, decompress } = require('./lib')
 
 test('shrink', async (t) => {
   const s = 'asdfλ'.repeat(16)

@@ -15,9 +15,8 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "preversion": "sortpack && npm t",
-    "test": "npm run test:lint && npm run test:tape",
-    "test:lint": "standard",
+    "preversion": "sortpack prettier --write src/*.ts && npm t",
+    "test": "npm run test:tape",
     "test:tape": "node index.test.js"
   },
   "homepage": "https://github.com/zacanger/shrink-string#readme",
@@ -35,8 +34,8 @@
   ],
   "devDependencies": {
     "@types/node": "18.11.9",
+    "prettier": "2.7.1",
     "sortpack": "2.2.3",
-    "standard": "17.0.0",
     "tape-async": "2.3.0",
     "typescript": "4.8.4"
   },

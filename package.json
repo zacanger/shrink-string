@@ -1,7 +1,7 @@
 {
   "name": "shrink-string",
   "description": "Tiny string compression module for Node.",
-  "version": "3.1.5",
+  "version": "3.1.6",
   "author": {
     "email": "zac@zacanger.com",
     "name": "Zac Anger",

@@ -2,6 +2,8 @@
 
 Tiny string compression module for Node.
 
+[Donate](https://ko-fi.com/zacanger)
+
 --------
 
 ## Installation
